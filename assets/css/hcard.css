@@ -1,0 +1,319 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+.header {
+  width: 100%;
+  height: 80vh;
+}
+.navbar {
+  width: 1440px;
+  margin: auto;
+}
+.navbar-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+}
+.navbar-link {
+  color: #FF8A00;
+  text-decoration: none;
+  font-size: x-large;
+}
+.slideshow-container {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+.mySlides {
+  display: none;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 90%;
+  right: 0;
+  z-index: 2;
+}
+.next {
+  padding-right: 60px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  color: white;
+}
+.prev {
+  padding-right: 120px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  color: white;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.slide-img {
+  width: 100%;
+  object-fit: inherit;
+}
+.up {
+  transform: translate(0, -350px);
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.title-text {
+  position: absolute;
+  z-index: 3;
+  color: white;
+  bottom: 0;
+  padding-bottom: 70px;
+  padding-left: 80px;
+  font-size: 64px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.hpage-text {
+  position: absolute;
+  z-index: 3;
+  color: white;
+  bottom: 0;
+  padding-bottom: 40px;
+  padding-left: 80px;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+/* Стили для модальных окон */
+
+.modal {
+  visibility: hidden;
+  width: 100%;
+  max-width: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30; /* Должен быть выше чем у подложки*/
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 30px;
+  border-radius: 3px;
+  background-color: #fff;
+  transition: 0.3s all;
+}
+/* Стили для активных классов подложки и окна */
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+/* Стили для кнопки закрытия */
+.modal__cross {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: #444;
+  cursor: pointer;
+}
+/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
+.google-enter {
+  margin: auto;
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-around;
+  align-items: center;
+  width: 280px;
+  height: 40px;
+  padding: 10px;
+}
+.google-icon {
+  width: 30px;
+  height: 30px;
+}
+.google-logo {
+  width: 100%;
+}
+.enter-form {
+  width: 300px;
+  margin: auto;
+}
+.enter-voyti {
+  text-align: left;
+  margin-top: 40px;
+}
+.input-modal {
+  height: 40px;
+  width: 280px;
+  margin-top: 20px;
+  background: none;
+  border: 1px solid black;
+  padding-left: 20px;
+}
+.btn-continue {
+  margin-top: 60px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+}
+.reg-text {
+  padding-top: 40px;
+}
+.reg-text2 {
+  margin-top: 80px;
+  width: 100px;
+  height: 40px;
+  border: none;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.gen-title {
+  width: 1400px;
+  margin: auto;
+}
+.gen-title-text {
+  font-size: 48px;
+}
+
+.footer {
+  width: 100%;
+  height: 370px;
+  background-color: #1c1c1c;
+}
+.footer-nav {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 70px;
+}
+.link-title {
+  font-size: 24px;
+  color: white;
+  padding-bottom: 70px;
+}
+.news-link {
+  text-decoration: none;
+  color: black;
+}
+.footer-links {
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-col1 {
+  display: flex;
+  flex-direction: column;
+}
+.footer-link {
+  font-size: 20px;
+  color: #939393;
+  text-decoration: none;
+  padding-top: 40px;
+}
+.vkcom {
+  margin-right: 20px;
+}
+.copyright {
+  font-size: 15px;
+  color: white;
+  padding-top: 100px;
+  text-align: center;
+}
+.city-name-adress {
+  font-size: 32px;
+  font-weight: 300;
+}
+.house-inf {
+  width: 1400px;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.bold-text {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.on-text {
+  font-weight: 300;
+  font-size: 28px;
+}
+.disc-title {
+  font-weight: 300;
+  font-size: 28px;
+  margin-top: 150px;
+}
+.disc-text {
+  margin-top: 50px;
+  font-weight: 300;
+  font-size: 20px;
+}
+.btn-cu {
+  width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.callme {
+  width: 200px;
+  height: 40px;
+  background: black;
+  color: white;
+  font-size: 20px;
+  border: none;
+  margin-top: 30px;
+}
